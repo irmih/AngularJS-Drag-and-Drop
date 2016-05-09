@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html ng-app="dad">
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+    <title>Hello World</title>
+    <meta charset="utf-8">
+    <title>farbe cocktail</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>   <!-- !!!neu!!!! -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/angular-dragdrop.min.js"></script> <!-- !!!neu!!!! -->
+    <script src="js/ui-bootstrap-tpls.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="oneCtrl">
+<h1>Welche Farbe hat wohl welcher Cocktail?</h1>
+<!--  drag -->
+<div class="row">
+    <div class="span4">
+        <img src="pics/mojito.svg" alt="Mojito" width="100" height="100" data-drag="true"
+             data-jqyoui-options="{revert: 'invalid'}" ng-model="mojito1" jqyoui-draggable="{animate: true}"
+             ng-hide="!mojito1.title"/>
+    </div>
+    <!-- drop -->
+    <div class="span3">
+        <div class="thumbnail" id="pinaC" data-drop="true" data-jqyoui-options ng-model="pinaC2"
+             jqyoui-droppable="{onDrop: 'abgedropptPinaC'}">
+            <div class="btn btn-default" data-drag="false" data-jqyoui-options ng-model="pinaC2" jqyoui-draggable
+                 ng-hide="!pinaC2.title">{{pinaC2.title}}
+            </div>
+        </div>
+    </div>
+</div>
+<!--  drag -->
+<div class="row">
+    <div class="span4">
+        <img src="pics/pinaC.svg" alt="PinaColada" width="100" height="10" data-drag="true"
+             data-jqyoui-options="{revert: 'invalid'}" ng-model="pinaC1" jqyoui-draggable="{animate: true}"
+             ng-hide="!pinaC1.title"/>
+    </div>
+    <!-- drop -->
+    <div class="span3">
+        <div class="thumbnail" id="solero" data-drop="true" data-jqyoui-options ng-model="solero2"
+             jqyoui-droppable="{onDrop: 'abgedropptSolero'}">
+            <div class="btn btn-warning" data-drag="false" data-jqyoui-options ng-model="solero2" jqyoui-draggable
+                 ng-hide="!solero2.title">{{solero2.title}}
+            </div>
+        </div>
+    </div>
+</div>
+<!--  drag -->
+<div class="row">
+    <div class="span4">
+        <img src="pics/solero.svg" alt="Solero" width="100" height="10" data-drag="true"
+             data-jqyoui-options="{revert: 'invalid'}" ng-model="solero1" jqyoui-draggable="{animate: true}"
+             ng-hide="!solero1.title"/>
+    </div>
+    <!-- drop -->
+    <div class="span3">
+        <div class="thumbnail" id="mojito" data-drop="true" data-jqyoui-options ng-model="mojito2"
+             jqyoui-droppable="{onDrop: 'abgedropptMojito'}">
+            <div class="btn btn-success" data-drag="false" data-jqyoui-options ng-model="mojito2" jqyoui-draggable
+                 ng-hide="!mojito2.title">{{mojito2.title}}
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h1>{{fehleranzeige}}</h1>
+<h1>{{erfolgsAnzeige}}</h1>
+<!--included scripts-->
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

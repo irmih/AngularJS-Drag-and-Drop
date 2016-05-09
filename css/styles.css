@@ -1,0 +1,104 @@
+body {
+    background-color: orange
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+#schwarzText {
+    color: black;
+}
+
+#orangeText {
+    color: orange;
+}
+
+#orangeTextCenter {
+    color: orange;
+    float: right;
+}
+
+#schwarzerCenterText {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
+
+#schwarzerCenterKasten {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #FFFFFF;
+    float: center;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: scroll
+}
+
+
+
+#linksisch {
+    text-align: left;
+    colour: black;
+}
+
+#containerFurBild {
+
+    width: 40%;
+    padding: 0;
+}
+
+IMG.mitteBitte {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+img {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    max-width: 100%;
+}
+
+#containerBildGross {
+    border: 3px solid black;
+    width: 20%;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#bildGross {
+    border: 3px solid black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    max-width: 40%;
+}
+
+#mojito {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#solero {
+    background-color: darkorange;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#pinaC {
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+        
+        
